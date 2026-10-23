@@ -1,6 +1,7 @@
 public class Main {
 
-    // 1. Factorial de un numero
+    // 1. Factorial
+
     public static int factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -9,7 +10,8 @@ public class Main {
         return n * factorial(n - 1);
     }
 
-    // 2. Suma de los numeros desde 1 hasta n
+    // 2. Suma de Numeros
+
     public static int suma(int n) {
         if (n <= 0) {
             return 0;
@@ -18,7 +20,7 @@ public class Main {
         return n + suma(n - 1);
     }
 
-    // 3. Potencia de una base con exponente no negativo
+    // 3. Potencia de un Numero
     public static int potencia(int base, int exponente) {
         if (exponente == 0) {
             return 1;
@@ -27,7 +29,7 @@ public class Main {
         return base * potencia(base, exponente - 1);
     }
 
-    // 4. Contar los digitos de un numero entero
+    // 4. Contar los digitos
     public static int contarDigitos(int n) {
         if (n > -10 && n < 10) {
             return 1;
@@ -36,7 +38,7 @@ public class Main {
         return 1 + contarDigitos(n / 10);
     }
 
-    // 5. Invertir una cadena sin usar reverse()
+    // 5. Invertir una cadena
     public static String invertir(String cadena) {
         if (cadena.length() <= 1) {
             return cadena;
