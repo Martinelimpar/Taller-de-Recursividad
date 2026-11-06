@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     // 1. Factorial
@@ -48,16 +50,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("1. Factorial de 3: " + factorial(3));
+        int n=scanner.nextInt();
 
-        System.out.println("2. Suma del 1 al 3: " + suma(3));
+        //System.out.println("1. Factorial de "+String.valueOf(n)+": " + factorial(n));
 
-        System.out.println("3. Potencia 3 elevado a 2: " + potencia(3, 2));
+        System.out.println("2. Suma del 1 al "+String.valueOf(n)+": " + suma(n));
 
-        System.out.println("4. Digitos del numero 87658321: " + contarDigitos(87654321));
+        System.out.println("3. Potencia 4 elevado a 2: " + potencia(2, 0));
 
-        System.out.println("5. Invertir la palabra Contraseña: " + invertir("Contraseña"));
+        System.out.println("4. Digitos del numero 987658321: " + contarDigitos(987654321));
+
+        System.out.println("5. Invertir la palabra Animal: " + invertir("Animal"));
     }
 }
 
